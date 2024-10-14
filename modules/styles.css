@@ -31,6 +31,10 @@ section {
   padding-bottom: 1em;
 }
 
+/* article.module h3:before{
+  content: "> ";
+} */
+
 @media screen and (max-width: 48em) {
 
   table,
