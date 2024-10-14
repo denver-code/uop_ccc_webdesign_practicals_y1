@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1.25em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 0.06em solid #ddd;
+  padding: 0.75em;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.section-title {  
+  text-align: center;
+}
+
+section {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 48em) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1em;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9.3em;
+    position: relative;
+  }
+
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.73em;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    width: 7.5em;
+  }
+
+}
